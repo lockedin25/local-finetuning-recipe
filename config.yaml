@@ -1,0 +1,43 @@
+# Who is who in the export. "me" = assistant (what the model learns), "her" = user (context).
+senders:
+  "Alex": me
+  "Sam": her
+date_order: DMY        # choose DMY or MDY to match your export
+raw_chat: data/raw/chat.txt
+messages_out: data/interim/messages.jsonl
+# Messages wrongly tagged as AI pastes (markdown/list formatting) that are genuinely yours: add their "ts" to keep them.
+keep_long: []
+
+# Module 3: building training examples
+build:
+  system_prompt: "You are Alex. Reply briefly and naturally in Hinglish. Use only the supplied conversation and memory; ask when context is missing."
+  gap_hours: 3               # a silence this long starts a new conversation
+  max_context_turns: 12      # at most this many previous turns as context
+  max_context_tokens: 512    # context cap
+  max_seq_tokens: 1536       # whole example cap (reply is never cut; context is trimmed)
+  turn_overhead: 5           # approx template tokens per turn (verified exactly at the end)
+  test_from: "2025-06-01"    # sessions starting on/after this date are the test set (example cutoff; choose your own)
+  valid_frac: 0.03           # random 3% of earlier sessions for validation
+  max_filler_share: 0.15     # cap ok/haha-only replies in train
+  filler_words: ["ok", "okay", "okk", "okkk", "k", "haha", "hahaha", "hahahaha", "hmm", "hmmm", "hm", "acha", "achha", "accha", "haan", "ha", "hn", "han", "yes", "ya", "yeah", "lol", "theek hai", "thik hai", "sahi", "nice", "<media>"]
+  seed: 42
+  budget_tokenizer: mlx-community/gemma-4-12B-it-4bit   # recount with the bake-off winner later
+
+# Module 5/6: LoRA training
+train:
+  model: mlx-community/gemma-4-12B-it-4bit
+  template_kwargs: {enable_thinking: false}   # MUST be explicit: mlx-lm tokenizer defaults Gemma-4 to thinking ON
+  adapter_path: adapters/gemma4
+  num_layers: -1               # LoRA on every layer
+  lora_parameters: {rank: 16, scale: 20.0, dropout: 0.05}
+  learning_rate: 2.0e-5
+  batch_size: 4
+  grad_accumulation_steps: 1
+  iters: 1000                  # placeholder; set after the smoke test measures speed
+  max_seq_length: 1536         # verify against your longest encoded example
+  grad_checkpoint: true        # trade compute for memory (16 GB Mac)
+  steps_per_report: 10
+  steps_per_eval: 100
+  val_batches: 25
+  save_every: 100
+  seed: 42

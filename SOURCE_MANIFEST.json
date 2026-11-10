@@ -1,0 +1,300 @@
+{
+  "scope": "Local fine-tuning scripts, essay tooling, GPU/VM helpers, and weight-edit experiments. No datasets, logs, credentials, model outputs or checkpoints.",
+  "files": [
+    {
+      "path": "src/bakeoff.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/build_dataset.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/build_sticker_page.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/build_v2.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/chat.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/chat_v3.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/clean_cards.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/clean_redact.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/describe_media.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/dl_status.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/download_models.sh",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/encode.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/evaluate.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/health_watch.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/jarvis_planner.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/jarvis_reason.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/judge_eval.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/lfm3.sh",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/m0_chat_template.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/m0_tokens.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/merge_reasoning.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/parse_whatsapp.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/postmortem_v3.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/reasoning_inputs.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/reasoning_local.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/reasoning_local_pilot.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/reasoning_review.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/reasoning_run.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/reasoning_summary.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/review_reasoning_page.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/test_jarvis_planner.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/train.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "src/watch.sh",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "essay/build.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "essay/research/capture_examples.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "essay/research/capture_hinglish.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "essay/research/draw_architecture.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "essay/research/generate_figures.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "essay/research/render_examples.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "essay/research/render_hinglish.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "chat_B.command",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "chat_B_C.command",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "chat_B_targeted.command",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "chat_B_weight_edit.command",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "chat_D_C.command",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "chat_DeepSeek_C.command",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "chat_vanilla.command",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/gpu_bundle/encode.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/gpu_bundle/eval_pipeline.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/gpu_bundle/eval_think.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/gpu_bundle/gen_eval.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/gpu_bundle/gpu_train.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/vm_bundle/vm_reason.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/weight_edit_audit/b_holdout.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/weight_edit_audit/b_weight_trial.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/weight_edit_audit/inspect_model_b.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/weight_edit_audit/probe_model_b.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/weight_edit_audit/targeted/experiment.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    },
+    {
+      "path": "experiments/v2/reasoning/tools/view.py",
+      "kind": "source",
+      "review": "identity/path substitutions; private test fixtures replaced where applicable"
+    }
+  ]
+}
